@@ -1,25 +1,30 @@
 @font-face {
     font-family: "Poppins-BoldItalic";
-    src: url("Poppins-BoldItalic.ttf") format("truetype");
+    src: url("../fonts/Poppins-BoldItalic.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "Poppins-Medium";
-    src: url("Poppins-Medium.ttf") format("truetype");
+    src: url("../fonts/Poppins-Medium.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
-/* video.html */
-#videoSong{
-    width: 100%;
-    max-width: 600px;
-}
-/* index.html */
-body {
+body{
+    font-size: 1.5em;
     background-color: #f3d3e0;
     font-family: "Poppins-BoldItalic", sans-serif;
     text-align: center;
+}
+title h1{
+    font-size: 1.5em;
+    color: #f3d3e0;
+    -webkit-text-stroke: 1px black;
+    margin: 0;
+}
+img{
+    width: 14em;
+    height: auto
 }
 #title{
     position: relative;
@@ -39,25 +44,21 @@ body {
     -webkit-text-stroke: 0.5px black;
     margin: 0;
 }
+audio{
+    padding-top: 1em;
+}
 button{
     font-family: inherit;
     font-size: 1.25em;
+    margin: 0.3em;
     background-color: #f3d3e0;
     border-radius: 10px;
     border-color: #bea9b2;
 }
-div{
-    position: relative; top: -25px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+#lyricsTitle {
+    margin-bottom: 0.2em; /* small space */
 }
-div p{
-    font-family: "Poppins-Medium";
-    font-weight: lighter;
-    text-align: left;
-    margin: 0;
-    white-space: pre-line;
-}
-@media (min-width: 600){
+#lyricsP {
+    margin-top: -1em;
+    white-space: pre-line;;
 }
